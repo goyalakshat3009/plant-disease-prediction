@@ -19,5 +19,10 @@ COPY trained_model/ ./trained_model/
 # Render web service port
 EXPOSE 10000
 
+# Limit TensorFlow CPU threads
+ENV TF_NUM_INTRAOP_THREADS=1
+ENV TF_NUM_INTEROP_THREADS=1
+ENV OMP_NUM_THREADS=1
+
 # Start Streamlit on Render's assigned port
 CMD ["sh", "-c", "streamlit run main.py --server.address=0.0.0.0 --server.port=${PORT:-10000} --server.headless=true"]
