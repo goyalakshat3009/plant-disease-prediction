@@ -1,0 +1,10 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+detect.ipynb
+kaggle.json
+kaggle (1).json
