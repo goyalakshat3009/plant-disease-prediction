@@ -1,6 +1,4 @@
-@"
-
-# Dataset and model artifacts
+# Large dataset and model
 plantvillage-dataset.zip
 PlantVillage/
 PlantVillage-Dataset/
@@ -12,9 +10,8 @@ kaggle.json
 kaggle (1).json
 .env
 
-# Python and notebooks
+# Python
 __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
-"@ | Add-Content .gitignore
